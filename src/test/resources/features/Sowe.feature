@@ -1,7 +1,7 @@
-@ChallengeBuilders
+@challengeBuilders
 Feature: Cadastro
 
-  @Cadastro
+  @cadastro
   Scenario: Deve cadastrar um usuario
     Given que estou na Pagina Inicial
     When clicar em Cadastrar

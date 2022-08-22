@@ -1,17 +1,13 @@
-package sowe;
+package stepDefinitions;
 
 import appium.core.Commands;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import sowe.pageObjects.CadastroPage;
-import sowe.pageObjects.HomePage;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.CadastroPage;
+import pages.HomePage;
 
-import static appium.core.DriverFactory.getAndroidDriver;
-import static appium.core.DriverFactory.quitDriver;
 import static org.junit.Assert.assertTrue;
 
 public class SoweSteps {
@@ -21,16 +17,6 @@ public class SoweSteps {
     private HomePage homePage = new HomePage();
 
     private CadastroPage cadastroPage = new CadastroPage();
-
-    @Before
-    public void init() {
-        getAndroidDriver();
-    }
-
-    @After
-    public void quit(){
-        quitDriver();
-    }
 
     @Given("^que estou na Pagina Inicial$")
     public void queEstouNaPaginaInicial() {

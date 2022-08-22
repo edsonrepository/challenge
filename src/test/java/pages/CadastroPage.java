@@ -1,4 +1,4 @@
-package sowe.pageObjects;
+package pages;
 
 import appium.core.Commands;
 

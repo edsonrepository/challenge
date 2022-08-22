@@ -10,9 +10,7 @@ import pages.HomePage;
 
 import static org.junit.Assert.assertTrue;
 
-public class SoweSteps {
-
-    private Commands commands = new Commands();
+public class SoweSteps extends Commands {
 
     private HomePage homePage = new HomePage();
 
@@ -20,7 +18,7 @@ public class SoweSteps {
 
     @Given("^que estou na Pagina Inicial$")
     public void queEstouNaPaginaInicial() {
-        assertTrue( commands.isVisibleByValue( "Cadastrar" ) );
+        assertTrue( isVisibleByValue( "Cadastrar" ) );
     }
 
     @When("^clicar em Cadastrar$")
@@ -37,7 +35,7 @@ public class SoweSteps {
     @And("^devo clicar em localizacao automatica$")
     public void devo_clicar_em_localizacao_automatica() {
         cadastroPage.clicarEmCompartilharLocalizacao();
-        commands.isVisibleByValue( "Compartilhar a localização" );
+        isVisibleByValue( "Compartilhar a localização" );
     }
 
     @And( "^clicar em sim$" )
@@ -47,7 +45,7 @@ public class SoweSteps {
 
     @Then( "^devo validar a home$" )
     public void devoValidarAHome() {
-        assertTrue( commands.isVisibleByValue( "Sowe" ) );
+        assertTrue( isVisibleByValue( "Sowe" ) );
     }
 
 }

@@ -2,12 +2,10 @@ package pages;
 
 import appium.core.Commands;
 
-public class HomePage {
-
-    private Commands commands = new Commands();
+public class HomePage extends Commands {
 
     public void clicarCadastrar() {
-        commands.clickOnAccessibilityId( "Cadastrar" );
+        clickOnAccessibilityId( "Cadastrar" );
     }
 
 }

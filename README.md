@@ -39,16 +39,16 @@ brew install maven
 1 - Após tudo instalado, abra o homebrew e inicie o servidor appium digite:<br/>
 : appium
 
-2 - Abra o AndroidStudio, e execute VirtualDeviceManager
-2.1 - Crie um simulador de dispositivo Android clicando em "create device"
-2.2 - Nomeie esse dispositivo de "Nexus_6_API_30"
-2.3 - Execute seu emulador de Android criado
-2.4 - Certifique que o dispositivo esteja sendo executado
+2 - Abra o AndroidStudio, e execute VirtualDeviceManager<br/>
+2.1 - Crie um simulador de dispositivo Android clicando em "create device"<br/>
+2.2 - Nomeie esse dispositivo de "Nexus_6_API_30"<br/>
+2.3 - Execute seu emulador de Android criado<br/>
+2.4 - Certifique que o dispositivo esteja sendo executado<br/>
 
 3 - Você pode executar o projeto através da linha de comando CLI com o seguinte comando:<br/>
 :  mvn test -Dcucumber.filter.tags="@challengeBuilders"
 
-3.1 - Se preferir execute a classe 'RunCucumberTest'
+3.1 - Se preferir execute a classe 'RunCucumberTest'<br/>
 
 ### Reports:<br/>
 
